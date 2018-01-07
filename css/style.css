@@ -70,6 +70,7 @@ header {
 }
 
 footer {
+  background-color: #121212;
 }
 
 /******************************************
@@ -118,6 +119,7 @@ a:hover{
   width: 700px;
   margin-left: 75px;
   margin-top: 50px;
+
 }
 
 .col-33 {
@@ -190,6 +192,8 @@ a:hover{
   width: auto;
   height: 550px;
   background: white;
+  margin-top: 50px;
+  color: #033048;
 }
 
 .ad-title {
@@ -199,11 +203,27 @@ a:hover{
  margin-top: 15px;
 }
 
-/*.sign-up {
+.sign-up {
   background: #f9e42e;
-  margin-top: -50px;
-  padding: 1px 25px 47px 25px;
-}*/
+  margin-top: 50px;
+  text-align: center;
+}
+
+.button2 {
+  background-color: #033048;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 5px;
+  text-align: center;
+  border: 5px;
+  padding: 10px 35px;
+  text-decoration: none;
+  margin: 50px auto;
+  font-family: Open Sans, sans-serif;
+}
 
 footer h2 {
   font-weight:800;
@@ -211,5 +231,18 @@ footer h2 {
   text-align: center;
   color: #f9e42e;
   padding: 25px;
-  margin-top: -50px;
+}
+
+.facebook {
+  padding-left: 30px;
+}
+
+.logos {
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
