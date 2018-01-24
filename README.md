@@ -1,5 +1,4 @@
-# FEWD Week #3: CSS Layouts
-
+# FEWD Week #4: JavaScript Basics
 
 <br>
 
@@ -8,10 +7,8 @@
 
 ### Description 
 
+The team from Relaxr is back...again! They want their page to be more interactive and asked you to add JavaScript to their source code. You've been given the HTML and CSS but will need to create a JavaScript file and add a few different pieces of interactivity:  Users should be able to click a link and have the remainder of the blog's content slide down and appear on the page, both on the main content column and the side bar; users should also be able hide the content when they are finished reading. See a detailed technical explanation below.
 
-Relaxr was really impressed by your work last week and wants you to continue development on their landing page. Starting in class, you will work to build out a more complex layout for their company site. They decided on creating a blog, and their back-end engineers will be focused on developing the blog's functionality. They want your front-end skills to style their designs using HTML and CSS so Relaxr's engineers can begin integrating. Once again, the designers have handed you a basic [design file with instructions](starter_code/readme) and the JPEG below to help you bring the blog to life. Submit the finished version for homework.
-
-![Relaxr Blog](solution_code/images/relaxr_blog.jpg)
 
 <br>
 
@@ -20,9 +17,11 @@ Relaxr was really impressed by your work last week and wants you to continue dev
 
 ### Real-World Applications
 
-- Build websites with multi-column layouts
-- Turn complex design assets into code
-- Style text on your page with Google Fonts
+
+- Practice programmatic thinking to plan before writing code
+- Use basic JavaScript to create an interactive page based on a user action
+- Link an external JavaScript file from HTML
+
 
 <br>
 
@@ -31,19 +30,22 @@ Relaxr was really impressed by your work last week and wants you to continue dev
 
 ### Technical Requirements 
 
-- Use in-line-block or floats in your CSS to achieve a two-column layout
-- Use the correct ```Open Sans``` Google Font typeface to style the text denoted in the [design file](starter_code/readme) and according to the JPEG provided
-- Use proper filename conventions (lowercase, .html)
-- Use a single external CSS stylesheet to style all pages
-- Use a background image for the headers
-- Add a hover effect to all the links using pseudo-classes
-- Integrate drop caps using pseudo-classes
+- Prevent a form submission with the ```event.preventDefault()``` function
+- Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
+- Select the appropriate DOM elements with CSS selectors upon a user's click using the ```$.click()``` handler
+- If a user clicks "Read More" on the primary column:
+
+  - have the text in the ```<p>``` tag slide down along with a "Read Less" link in the blog post using  ```$.slideDown()``` and ```$.show()```
+  - hide the "Read More" link using ```$.hide()```
+
+- If a user clicks "Read Less" on the primary column:
+
+  - have the ```<p>``` slide up and hide the "Read Less" link using  ```$.slideUp()``` and ```$.hide()```
+  - show the "Read More" link using ```$.show()```
+
+- Using the same functions as above, if a user clicks the "Learn More" link in the sidebar, have the ```<span>``` inside that ```<p>``` slide down and hide the "Learn More" link using ```$.slideDown()``` and ```$.hide()```
 
 
-#### Bonus
-- Link the "Blog" link in the header to the page you've built for this assignment
-- Link the "About" link in the header to the [landing page](../../Week_02_Styling/Assignment/starter_code/images/relaxr_landing.jpg) you built last week
-- Up for a real challenge? Use ```<script>``` tags in your HTML and [read ahead](https://learn.jquery.com/events/event-basics/) to make a dialogue box pop up when a user clicks "Sign Up Now!" that reads "We're Not Ready For Sign-Ups...Yet."
 
 <br>
 
@@ -51,12 +53,10 @@ Relaxr was really impressed by your work last week and wants you to continue dev
 
 ### Resources
 
-- [Starter Code and Design File](starter_code/readme)
-- [Documentation on integrating Drop Caps](https://css-tricks.com/snippets/css/drop-caps/)
-- [Documentation on CSS Pseudo-classes](http://www.w3schools.com/CSS/CSS_pseudo_classes.asp)
-- [Starter Code, Assets, and Design File](starter_code/)
-- [Prepare for JavaScript/jQuery](https://generalassemb.ly/online/videos/what-can-you-do-with-javascript)
-- [Read ahead on jQuery basics](https://learn.jquery.com/events/event-basics/)
+- [Starter Code](starter_code)
+- [Cheat-sheet of jQuery selectors, methods, and events](http://oscarotero.com/jquery/)
+- [Get more practice with jQuery DOM selectors](jquery_dom_selector_practice)
+
 
 <br>
 
@@ -64,5 +64,9 @@ Relaxr was really impressed by your work last week and wants you to continue dev
 
 ### Evaluation / Submission
 
-Students should use the same folder and GitHub repository as the previous project ("homework-landingpage"). When ready for evaluation they should push their code to that repository. Instructional team should evaluate against the solution code and the student's use of technical elements. They will provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). The maximum possible score on this assignment is 14/14.  Bonus materials are completely optional.
 
+Students should use the same folder and GitHub repository as the previous project ("homework-landingpage"). When ready for evaluation they should push their code to that repository and notify the instructional team via slack. Instructional team should evaluate against the solution code and the student's use of technical elements. They will provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). **Note**: If bullets have child bullets, grade the child bullets and not the parent bullet belonging to the child. The maximum possible score on this assignment is 16/16. Bonus materials are completely optional.
+
+### Final Project Milestone 1
+
+By this week, you should have created and handed in wireframes that sketch out your idea and basic design for a final project.
